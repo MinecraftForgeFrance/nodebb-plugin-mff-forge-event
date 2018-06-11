@@ -1,0 +1,17 @@
+{
+  "id": "nodebb-plugin-mff-forge-event",
+  "name": "NodeBB Plugin MFF Forge Event",
+  "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-forge-event",
+  "library": "./index.js",
+  "template": "./static/template",
+  "hooks": [
+    {
+      "hook": "static:app.load",
+      "method": "init"
+    },
+    {
+      "hook": "filter:navigation.available",
+      "method": "addNavigation"
+    }
+  ]
+}

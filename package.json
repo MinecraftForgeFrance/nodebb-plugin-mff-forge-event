@@ -1,0 +1,21 @@
+{
+  "name": "nodebb-plugin-mff-forge-event",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinecraftForgeFrance/nodebb-plugin-forge-event.git"
+  },
+  "author": "Superloup10 <Superloup10@gmail.com>",
+  "license": "BSD-2-Clause",
+  "nbbpm": {
+    "compatibility": "^1.9.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-mff-forge-event/issues"
+  },
+  "homepage": "https://github.com/MinecraftForgeFrance/nodebb-plugin-mff-forge-event#readme"
+}

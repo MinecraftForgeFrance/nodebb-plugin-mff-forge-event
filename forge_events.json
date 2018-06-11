@@ -1,0 +1,2098 @@
+{
+ "net.minecraftforge.client.event.ClientChatEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ClientChatEvent",
+  "full_name": "net.minecraftforge.client.event.ClientChatEvent"
+ },
+ "net.minecraftforge.client.event.ClientChatReceivedEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ClientChatReceivedEvent",
+  "full_name": "net.minecraftforge.client.event.ClientChatReceivedEvent"
+ },
+ "net.minecraftforge.client.event.ColorHandlerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ColorHandlerEvent",
+  "full_name": "net.minecraftforge.client.event.ColorHandlerEvent",
+  "children": [
+   "net.minecraftforge.client.event.ColorHandlerEvent.Block",
+   "net.minecraftforge.client.event.ColorHandlerEvent.Item"
+  ]
+ },
+ "net.minecraftforge.client.event.ColorHandlerEvent.Block": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ColorHandlerEvent.Block",
+  "full_name": "net.minecraftforge.client.event.ColorHandlerEvent.Block"
+ },
+ "net.minecraftforge.client.event.ColorHandlerEvent.Item": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ColorHandlerEvent.Item",
+  "full_name": "net.minecraftforge.client.event.ColorHandlerEvent.Item"
+ },
+ "net.minecraftforge.client.event.DrawBlockHighlightEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "DrawBlockHighlightEvent",
+  "full_name": "net.minecraftforge.client.event.DrawBlockHighlightEvent"
+ },
+ "net.minecraftforge.client.event.EntityViewRenderEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "EntityViewRenderEvent",
+  "full_name": "net.minecraftforge.client.event.EntityViewRenderEvent",
+  "children": [
+   "net.minecraftforge.client.event.EntityViewRenderEvent.FogDensity",
+   "net.minecraftforge.client.event.EntityViewRenderEvent.RenderFogEvent",
+   "net.minecraftforge.client.event.EntityViewRenderEvent.FogColors",
+   "net.minecraftforge.client.event.EntityViewRenderEvent.CameraSetup",
+   "net.minecraftforge.client.event.EntityViewRenderEvent.FOVModifier"
+  ]
+ },
+ "net.minecraftforge.client.event.EntityViewRenderEvent.FogDensity": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "EntityViewRenderEvent.FogDensity",
+  "full_name": "net.minecraftforge.client.event.EntityViewRenderEvent.FogDensity"
+ },
+ "net.minecraftforge.client.event.EntityViewRenderEvent.RenderFogEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "EntityViewRenderEvent.RenderFogEvent",
+  "full_name": "net.minecraftforge.client.event.EntityViewRenderEvent.RenderFogEvent"
+ },
+ "net.minecraftforge.client.event.EntityViewRenderEvent.FogColors": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "EntityViewRenderEvent.FogColors",
+  "full_name": "net.minecraftforge.client.event.EntityViewRenderEvent.FogColors"
+ },
+ "net.minecraftforge.client.event.EntityViewRenderEvent.CameraSetup": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "EntityViewRenderEvent.CameraSetup",
+  "full_name": "net.minecraftforge.client.event.EntityViewRenderEvent.CameraSetup"
+ },
+ "net.minecraftforge.client.event.EntityViewRenderEvent.FOVModifier": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "EntityViewRenderEvent.FOVModifier",
+  "full_name": "net.minecraftforge.client.event.EntityViewRenderEvent.FOVModifier"
+ },
+ "net.minecraftforge.client.event.FOVUpdateEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "FOVUpdateEvent",
+  "full_name": "net.minecraftforge.client.event.FOVUpdateEvent"
+ },
+ "net.minecraftforge.client.event.GuiContainerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiContainerEvent",
+  "full_name": "net.minecraftforge.client.event.GuiContainerEvent",
+  "children": [
+   "net.minecraftforge.client.event.GuiContainerEvent.DrawForeground"
+  ]
+ },
+ "net.minecraftforge.client.event.GuiContainerEvent.DrawForeground": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiContainerEvent.DrawForeground",
+  "full_name": "net.minecraftforge.client.event.GuiContainerEvent.DrawForeground"
+ },
+ "net.minecraftforge.client.event.GuiOpenEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiOpenEvent",
+  "full_name": "net.minecraftforge.client.event.GuiOpenEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent",
+  "children": [
+   "net.minecraftforge.client.event.GuiScreenEvent.InitGuiEvent",
+   "net.minecraftforge.client.event.GuiScreenEvent.DrawScreenEvent",
+   "net.minecraftforge.client.event.GuiScreenEvent.BackgroundDrawnEvent",
+   "net.minecraftforge.client.event.GuiScreenEvent.PotionShiftEvent",
+   "net.minecraftforge.client.event.GuiScreenEvent.ActionPerformedEvent",
+   "net.minecraftforge.client.event.GuiScreenEvent.MouseInputEvent",
+   "net.minecraftforge.client.event.GuiScreenEvent.KeyboardInputEvent"
+  ]
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.InitGuiEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.InitGuiEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.InitGuiEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.DrawScreenEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.DrawScreenEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.DrawScreenEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.BackgroundDrawnEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.BackgroundDrawnEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.BackgroundDrawnEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.PotionShiftEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.PotionShiftEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.PotionShiftEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.ActionPerformedEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.ActionPerformedEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.ActionPerformedEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.MouseInputEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.MouseInputEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.MouseInputEvent"
+ },
+ "net.minecraftforge.client.event.GuiScreenEvent.KeyboardInputEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "GuiScreenEvent.KeyboardInputEvent",
+  "full_name": "net.minecraftforge.client.event.GuiScreenEvent.KeyboardInputEvent"
+ },
+ "net.minecraftforge.client.event.InputUpdateEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "InputUpdateEvent",
+  "full_name": "net.minecraftforge.client.event.InputUpdateEvent"
+ },
+ "net.minecraftforge.client.event.ModelBakeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ModelBakeEvent",
+  "full_name": "net.minecraftforge.client.event.ModelBakeEvent"
+ },
+ "net.minecraftforge.client.event.ModelRegistryEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ModelRegistryEvent",
+  "full_name": "net.minecraftforge.client.event.ModelRegistryEvent"
+ },
+ "net.minecraftforge.client.event.MouseEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "MouseEvent",
+  "full_name": "net.minecraftforge.client.event.MouseEvent"
+ },
+ "net.minecraftforge.client.event.PlayerSPPushOutOfBlocksEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "PlayerSPPushOutOfBlocksEvent",
+  "full_name": "net.minecraftforge.client.event.PlayerSPPushOutOfBlocksEvent"
+ },
+ "net.minecraftforge.client.event.RenderBlockOverlayEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderBlockOverlayEvent",
+  "full_name": "net.minecraftforge.client.event.RenderBlockOverlayEvent"
+ },
+ "net.minecraftforge.client.event.RenderGameOverlayEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderGameOverlayEvent",
+  "full_name": "net.minecraftforge.client.event.RenderGameOverlayEvent",
+  "children": [
+   "net.minecraftforge.client.event.RenderGameOverlayEvent.Pre",
+   "net.minecraftforge.client.event.RenderGameOverlayEvent.Post"
+  ]
+ },
+ "net.minecraftforge.client.event.RenderGameOverlayEvent.Pre": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderGameOverlayEvent.Pre",
+  "full_name": "net.minecraftforge.client.event.RenderGameOverlayEvent.Pre"
+ },
+ "net.minecraftforge.client.event.RenderGameOverlayEvent.Post": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderGameOverlayEvent.Post",
+  "full_name": "net.minecraftforge.client.event.RenderGameOverlayEvent.Post"
+ },
+ "net.minecraftforge.client.event.RenderHandEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderHandEvent",
+  "full_name": "net.minecraftforge.client.event.RenderHandEvent"
+ },
+ "net.minecraftforge.client.event.RenderItemInFrameEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderItemInFrameEvent",
+  "full_name": "net.minecraftforge.client.event.RenderItemInFrameEvent"
+ },
+ "net.minecraftforge.client.event.RenderLivingEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderLivingEvent",
+  "full_name": "net.minecraftforge.client.event.RenderLivingEvent",
+  "children": [
+   "net.minecraftforge.client.event.RenderLivingEvent.Specials"
+  ]
+ },
+ "net.minecraftforge.client.event.RenderLivingEvent.Specials": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderLivingEvent.Specials",
+  "full_name": "net.minecraftforge.client.event.RenderLivingEvent.Specials"
+ },
+ "net.minecraftforge.client.event.RenderPlayerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderPlayerEvent",
+  "full_name": "net.minecraftforge.client.event.RenderPlayerEvent",
+  "children": [
+   "net.minecraftforge.client.event.RenderPlayerEvent.Specials",
+   "net.minecraftforge.client.event.RenderPlayerEvent.SetArmorModel"
+  ]
+ },
+ "net.minecraftforge.client.event.RenderPlayerEvent.Specials": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderPlayerEvent.Specials",
+  "full_name": "net.minecraftforge.client.event.RenderPlayerEvent.Specials"
+ },
+ "net.minecraftforge.client.event.RenderPlayerEvent.SetArmorModel": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderPlayerEvent.SetArmorModel",
+  "full_name": "net.minecraftforge.client.event.RenderPlayerEvent.SetArmorModel"
+ },
+ "net.minecraftforge.client.event.RenderSpecificHandEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderSpecificHandEvent",
+  "full_name": "net.minecraftforge.client.event.RenderSpecificHandEvent"
+ },
+ "net.minecraftforge.client.event.RenderTooltipEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderTooltipEvent",
+  "full_name": "net.minecraftforge.client.event.RenderTooltipEvent",
+  "children": [
+   "net.minecraftforge.client.event.RenderTooltipEvent.Pre",
+   "net.minecraftforge.client.event.RenderTooltipEvent.Post",
+   "net.minecraftforge.client.event.RenderTooltipEvent.Color"
+  ]
+ },
+ "net.minecraftforge.client.event.RenderTooltipEvent.Pre": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderTooltipEvent.Pre",
+  "full_name": "net.minecraftforge.client.event.RenderTooltipEvent.Pre"
+ },
+ "net.minecraftforge.client.event.RenderTooltipEvent.Post": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderTooltipEvent.Post",
+  "full_name": "net.minecraftforge.client.event.RenderTooltipEvent.Post"
+ },
+ "net.minecraftforge.client.event.RenderTooltipEvent.Color": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderTooltipEvent.Color",
+  "full_name": "net.minecraftforge.client.event.RenderTooltipEvent.Color"
+ },
+ "net.minecraftforge.client.event.RenderWorldLastEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "RenderWorldLastEvent",
+  "full_name": "net.minecraftforge.client.event.RenderWorldLastEvent"
+ },
+ "net.minecraftforge.client.event.ScreenshotEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "ScreenshotEvent",
+  "full_name": "net.minecraftforge.client.event.ScreenshotEvent"
+ },
+ "net.minecraftforge.client.event.TextureStitchEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "TextureStitchEvent",
+  "full_name": "net.minecraftforge.client.event.TextureStitchEvent",
+  "children": [
+   "net.minecraftforge.client.event.TextureStitchEvent.Pre",
+   "net.minecraftforge.client.event.TextureStitchEvent.Post"
+  ]
+ },
+ "net.minecraftforge.client.event.TextureStitchEvent.Pre": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "TextureStitchEvent.Pre",
+  "full_name": "net.minecraftforge.client.event.TextureStitchEvent.Pre"
+ },
+ "net.minecraftforge.client.event.TextureStitchEvent.Post": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event",
+  "simple_name": "TextureStitchEvent.Post",
+  "full_name": "net.minecraftforge.client.event.TextureStitchEvent.Post"
+ },
+ "net.minecraftforge.client.event.sound.PlaySoundEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event.sound",
+  "simple_name": "PlaySoundEvent",
+  "full_name": "net.minecraftforge.client.event.sound.PlaySoundEvent"
+ },
+ "net.minecraftforge.client.event.sound.SoundEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event.sound",
+  "simple_name": "SoundEvent",
+  "full_name": "net.minecraftforge.client.event.sound.SoundEvent",
+  "children": [
+   "net.minecraftforge.client.event.sound.PlaySoundEvent",
+   "net.minecraftforge.client.event.sound.SoundEvent.SoundSourceEvent",
+   "net.minecraftforge.client.event.sound.SoundLoadEvent",
+   "net.minecraftforge.client.event.sound.SoundSetupEvent"
+  ]
+ },
+ "net.minecraftforge.client.event.sound.SoundEvent.SoundSourceEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event.sound",
+  "simple_name": "SoundEvent.SoundSourceEvent",
+  "full_name": "net.minecraftforge.client.event.sound.SoundEvent.SoundSourceEvent"
+ },
+ "net.minecraftforge.client.event.sound.SoundLoadEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event.sound",
+  "simple_name": "SoundLoadEvent",
+  "full_name": "net.minecraftforge.client.event.sound.SoundLoadEvent"
+ },
+ "net.minecraftforge.client.event.sound.SoundSetupEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.client.event.sound",
+  "simple_name": "SoundSetupEvent",
+  "full_name": "net.minecraftforge.client.event.sound.SoundSetupEvent"
+ },
+ "net.minecraftforge.common.ForceChunkEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.common",
+  "simple_name": "ForceChunkEvent",
+  "full_name": "net.minecraftforge.common.ForceChunkEvent"
+ },
+ "net.minecraftforge.common.ForceChunkEvent.UnforceChunkEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.common",
+  "simple_name": "ForceChunkEvent.UnforceChunkEvent",
+  "full_name": "net.minecraftforge.common.ForceChunkEvent.UnforceChunkEvent"
+ },
+ "net.minecraftforge.event.AnvilUpdateEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "AnvilUpdateEvent",
+  "full_name": "net.minecraftforge.event.AnvilUpdateEvent"
+ },
+ "net.minecraftforge.event.AttachCapabilitiesEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "AttachCapabilitiesEvent",
+  "full_name": "net.minecraftforge.event.AttachCapabilitiesEvent"
+ },
+ "net.minecraftforge.event.CommandEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "CommandEvent",
+  "full_name": "net.minecraftforge.event.CommandEvent"
+ },
+ "net.minecraftforge.event.DifficultyChangeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "DifficultyChangeEvent",
+  "full_name": "net.minecraftforge.event.DifficultyChangeEvent"
+ },
+ "net.minecraftforge.event.LootTableLoadEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "LootTableLoadEvent",
+  "full_name": "net.minecraftforge.event.LootTableLoadEvent"
+ },
+ "net.minecraftforge.event.RegistryEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "RegistryEvent",
+  "full_name": "net.minecraftforge.event.RegistryEvent",
+  "children": [
+   "net.minecraftforge.event.RegistryEvent.Register",
+   "net.minecraftforge.event.RegistryEvent.MissingMappings"
+  ]
+ },
+ "net.minecraftforge.event.RegistryEvent.NewRegistry": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "RegistryEvent.NewRegistry",
+  "full_name": "net.minecraftforge.event.RegistryEvent.NewRegistry"
+ },
+ "net.minecraftforge.event.RegistryEvent.Register": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "RegistryEvent.Register",
+  "full_name": "net.minecraftforge.event.RegistryEvent.Register"
+ },
+ "net.minecraftforge.event.RegistryEvent.MissingMappings": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "RegistryEvent.MissingMappings",
+  "full_name": "net.minecraftforge.event.RegistryEvent.MissingMappings"
+ },
+ "net.minecraftforge.event.ServerChatEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event",
+  "simple_name": "ServerChatEvent",
+  "full_name": "net.minecraftforge.event.ServerChatEvent"
+ },
+ "net.minecraftforge.event.brewing.PlayerBrewedPotionEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.brewing",
+  "simple_name": "PlayerBrewedPotionEvent",
+  "full_name": "net.minecraftforge.event.brewing.PlayerBrewedPotionEvent"
+ },
+ "net.minecraftforge.event.brewing.PotionBrewEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.brewing",
+  "simple_name": "PotionBrewEvent",
+  "full_name": "net.minecraftforge.event.brewing.PotionBrewEvent",
+  "children": [
+   "net.minecraftforge.event.brewing.PotionBrewEvent.Pre",
+   "net.minecraftforge.event.brewing.PotionBrewEvent.Post"
+  ]
+ },
+ "net.minecraftforge.event.brewing.PotionBrewEvent.Pre": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.brewing",
+  "simple_name": "PotionBrewEvent.Pre",
+  "full_name": "net.minecraftforge.event.brewing.PotionBrewEvent.Pre"
+ },
+ "net.minecraftforge.event.brewing.PotionBrewEvent.Post": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.brewing",
+  "simple_name": "PotionBrewEvent.Post",
+  "full_name": "net.minecraftforge.event.brewing.PotionBrewEvent.Post"
+ },
+ "net.minecraftforge.event.enchanting.EnchantmentLevelSetEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.enchanting",
+  "simple_name": "EnchantmentLevelSetEvent",
+  "full_name": "net.minecraftforge.event.enchanting.EnchantmentLevelSetEvent"
+ },
+ "net.minecraftforge.event.entity.EntityEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityEvent",
+  "full_name": "net.minecraftforge.event.entity.EntityEvent",
+  "children": [
+   "net.minecraftforge.event.entity.EntityEvent.EntityConstructing",
+   "net.minecraftforge.event.entity.EntityEvent.CanUpdate",
+   "net.minecraftforge.event.entity.EntityEvent.EnteringChunk",
+   "net.minecraftforge.event.entity.EntityJoinWorldEvent",
+   "net.minecraftforge.event.entity.EntityMobGriefingEvent",
+   "net.minecraftforge.event.entity.EntityMountEvent",
+   "net.minecraftforge.event.entity.EntityStruckByLightningEvent",
+   "net.minecraftforge.event.entity.EntityTravelToDimensionEvent",
+   "net.minecraftforge.event.entity.PlaySoundAtEntityEvent",
+   "net.minecraftforge.event.entity.ProjectileImpactEvent",
+   "net.minecraftforge.event.entity.ThrowableImpactEvent",
+   "net.minecraftforge.event.entity.item.ItemEvent",
+   "net.minecraftforge.event.entity.living.LivingEvent",
+   "net.minecraftforge.event.entity.living.ZombieEvent",
+   "net.minecraftforge.event.entity.minecart.MinecartEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.EntityEvent.EntityConstructing": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityEvent.EntityConstructing",
+  "full_name": "net.minecraftforge.event.entity.EntityEvent.EntityConstructing"
+ },
+ "net.minecraftforge.event.entity.EntityEvent.CanUpdate": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityEvent.CanUpdate",
+  "full_name": "net.minecraftforge.event.entity.EntityEvent.CanUpdate"
+ },
+ "net.minecraftforge.event.entity.EntityEvent.EnteringChunk": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityEvent.EnteringChunk",
+  "full_name": "net.minecraftforge.event.entity.EntityEvent.EnteringChunk"
+ },
+ "net.minecraftforge.event.entity.EntityJoinWorldEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityJoinWorldEvent",
+  "full_name": "net.minecraftforge.event.entity.EntityJoinWorldEvent"
+ },
+ "net.minecraftforge.event.entity.EntityMobGriefingEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityMobGriefingEvent",
+  "full_name": "net.minecraftforge.event.entity.EntityMobGriefingEvent"
+ },
+ "net.minecraftforge.event.entity.EntityMountEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityMountEvent",
+  "full_name": "net.minecraftforge.event.entity.EntityMountEvent"
+ },
+ "net.minecraftforge.event.entity.EntityStruckByLightningEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityStruckByLightningEvent",
+  "full_name": "net.minecraftforge.event.entity.EntityStruckByLightningEvent"
+ },
+ "net.minecraftforge.event.entity.EntityTravelToDimensionEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "EntityTravelToDimensionEvent",
+  "full_name": "net.minecraftforge.event.entity.EntityTravelToDimensionEvent"
+ },
+ "net.minecraftforge.event.entity.PlaySoundAtEntityEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "PlaySoundAtEntityEvent",
+  "full_name": "net.minecraftforge.event.entity.PlaySoundAtEntityEvent"
+ },
+ "net.minecraftforge.event.entity.ProjectileImpactEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "ProjectileImpactEvent",
+  "full_name": "net.minecraftforge.event.entity.ProjectileImpactEvent",
+  "children": [
+   "net.minecraftforge.event.entity.ProjectileImpactEvent.Arrow",
+   "net.minecraftforge.event.entity.ProjectileImpactEvent.Fireball",
+   "net.minecraftforge.event.entity.ProjectileImpactEvent.Throwable"
+  ]
+ },
+ "net.minecraftforge.event.entity.ProjectileImpactEvent.Arrow": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "ProjectileImpactEvent.Arrow",
+  "full_name": "net.minecraftforge.event.entity.ProjectileImpactEvent.Arrow"
+ },
+ "net.minecraftforge.event.entity.ProjectileImpactEvent.Fireball": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "ProjectileImpactEvent.Fireball",
+  "full_name": "net.minecraftforge.event.entity.ProjectileImpactEvent.Fireball"
+ },
+ "net.minecraftforge.event.entity.ProjectileImpactEvent.Throwable": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "ProjectileImpactEvent.Throwable",
+  "full_name": "net.minecraftforge.event.entity.ProjectileImpactEvent.Throwable"
+ },
+ "net.minecraftforge.event.entity.ThrowableImpactEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity",
+  "simple_name": "ThrowableImpactEvent",
+  "full_name": "net.minecraftforge.event.entity.ThrowableImpactEvent"
+ },
+ "net.minecraftforge.event.entity.item.ItemEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.item",
+  "simple_name": "ItemEvent",
+  "full_name": "net.minecraftforge.event.entity.item.ItemEvent",
+  "children": [
+   "net.minecraftforge.event.entity.item.ItemExpireEvent",
+   "net.minecraftforge.event.entity.item.ItemTossEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.item.ItemExpireEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.item",
+  "simple_name": "ItemExpireEvent",
+  "full_name": "net.minecraftforge.event.entity.item.ItemExpireEvent"
+ },
+ "net.minecraftforge.event.entity.item.ItemTossEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.item",
+  "simple_name": "ItemTossEvent",
+  "full_name": "net.minecraftforge.event.entity.item.ItemTossEvent"
+ },
+ "net.minecraftforge.event.entity.living.AnimalTameEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "AnimalTameEvent",
+  "full_name": "net.minecraftforge.event.entity.living.AnimalTameEvent"
+ },
+ "net.minecraftforge.event.entity.living.BabyEntitySpawnEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "BabyEntitySpawnEvent",
+  "full_name": "net.minecraftforge.event.entity.living.BabyEntitySpawnEvent"
+ },
+ "net.minecraftforge.event.entity.living.EnderTeleportEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "EnderTeleportEvent",
+  "full_name": "net.minecraftforge.event.entity.living.EnderTeleportEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingAttackEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingAttackEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingAttackEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingDamageEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingDamageEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingDamageEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingDeathEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingDeathEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingDeathEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingDestroyBlockEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingDestroyBlockEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingDestroyBlockEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingDropsEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingDropsEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingDropsEvent",
+  "children": [
+   "net.minecraftforge.event.entity.player.PlayerDropsEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEntityUseItemEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent",
+  "children": [
+   "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Start",
+   "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Tick",
+   "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Stop",
+   "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Finish"
+  ]
+ },
+ "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Start": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEntityUseItemEvent.Start",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Start"
+ },
+ "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Tick": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEntityUseItemEvent.Tick",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Tick"
+ },
+ "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Stop": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEntityUseItemEvent.Stop",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Stop"
+ },
+ "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Finish": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEntityUseItemEvent.Finish",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent.Finish"
+ },
+ "net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEquipmentChangeEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEvent",
+  "children": [
+   "net.minecraftforge.event.entity.living.AnimalTameEvent",
+   "net.minecraftforge.event.entity.living.EnderTeleportEvent",
+   "net.minecraftforge.event.entity.living.LivingAttackEvent",
+   "net.minecraftforge.event.entity.living.LivingDamageEvent",
+   "net.minecraftforge.event.entity.living.LivingDeathEvent",
+   "net.minecraftforge.event.entity.living.LivingDestroyBlockEvent",
+   "net.minecraftforge.event.entity.living.LivingDropsEvent",
+   "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent",
+   "net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent",
+   "net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent",
+   "net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent",
+   "net.minecraftforge.event.entity.living.LivingExperienceDropEvent",
+   "net.minecraftforge.event.entity.living.LivingFallEvent",
+   "net.minecraftforge.event.entity.living.LivingHealEvent",
+   "net.minecraftforge.event.entity.living.LivingHurtEvent",
+   "net.minecraftforge.event.entity.living.LivingKnockBackEvent",
+   "net.minecraftforge.event.entity.living.LivingPackSizeEvent",
+   "net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent",
+   "net.minecraftforge.event.entity.living.LivingSpawnEvent",
+   "net.minecraftforge.event.entity.living.LootingLevelEvent",
+   "net.minecraftforge.event.entity.living.PotionColorCalculationEvent",
+   "net.minecraftforge.event.entity.player.PlayerEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEvent.LivingUpdateEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingEvent.LivingJumpEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingExperienceDropEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingExperienceDropEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingExperienceDropEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingFallEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingFallEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingFallEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingHealEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingHealEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingHealEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingHurtEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingHurtEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingHurtEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingKnockBackEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingKnockBackEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingKnockBackEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingPackSizeEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingPackSizeEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingPackSizeEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingSetAttackTargetEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent"
+ },
+ "net.minecraftforge.event.entity.living.LivingSpawnEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingSpawnEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LivingSpawnEvent",
+  "children": [
+   "net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn",
+   "net.minecraftforge.event.entity.living.LivingSpawnEvent.SpecialSpawn",
+   "net.minecraftforge.event.entity.living.LivingSpawnEvent.AllowDespawn"
+  ]
+ },
+ "net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingSpawnEvent.CheckSpawn",
+  "full_name": "net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn"
+ },
+ "net.minecraftforge.event.entity.living.LivingSpawnEvent.SpecialSpawn": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingSpawnEvent.SpecialSpawn",
+  "full_name": "net.minecraftforge.event.entity.living.LivingSpawnEvent.SpecialSpawn"
+ },
+ "net.minecraftforge.event.entity.living.LivingSpawnEvent.AllowDespawn": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LivingSpawnEvent.AllowDespawn",
+  "full_name": "net.minecraftforge.event.entity.living.LivingSpawnEvent.AllowDespawn"
+ },
+ "net.minecraftforge.event.entity.living.LootingLevelEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "LootingLevelEvent",
+  "full_name": "net.minecraftforge.event.entity.living.LootingLevelEvent"
+ },
+ "net.minecraftforge.event.entity.living.PotionColorCalculationEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "PotionColorCalculationEvent",
+  "full_name": "net.minecraftforge.event.entity.living.PotionColorCalculationEvent"
+ },
+ "net.minecraftforge.event.entity.living.ZombieEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "ZombieEvent",
+  "full_name": "net.minecraftforge.event.entity.living.ZombieEvent",
+  "children": [
+   "net.minecraftforge.event.entity.living.ZombieEvent.SummonAidEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.living.ZombieEvent.SummonAidEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity.living",
+  "simple_name": "ZombieEvent.SummonAidEvent",
+  "full_name": "net.minecraftforge.event.entity.living.ZombieEvent.SummonAidEvent"
+ },
+ "net.minecraftforge.event.entity.minecart.MinecartCollisionEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.minecart",
+  "simple_name": "MinecartCollisionEvent",
+  "full_name": "net.minecraftforge.event.entity.minecart.MinecartCollisionEvent"
+ },
+ "net.minecraftforge.event.entity.minecart.MinecartEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.minecart",
+  "simple_name": "MinecartEvent",
+  "full_name": "net.minecraftforge.event.entity.minecart.MinecartEvent",
+  "children": [
+   "net.minecraftforge.event.entity.minecart.MinecartCollisionEvent",
+   "net.minecraftforge.event.entity.minecart.MinecartInteractEvent",
+   "net.minecraftforge.event.entity.minecart.MinecartUpdateEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.minecart.MinecartInteractEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.minecart",
+  "simple_name": "MinecartInteractEvent",
+  "full_name": "net.minecraftforge.event.entity.minecart.MinecartInteractEvent"
+ },
+ "net.minecraftforge.event.entity.minecart.MinecartUpdateEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.minecart",
+  "simple_name": "MinecartUpdateEvent",
+  "full_name": "net.minecraftforge.event.entity.minecart.MinecartUpdateEvent"
+ },
+ "net.minecraftforge.event.entity.player.AdvancementEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "AdvancementEvent",
+  "full_name": "net.minecraftforge.event.entity.player.AdvancementEvent"
+ },
+ "net.minecraftforge.event.entity.player.AnvilRepairEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "AnvilRepairEvent",
+  "full_name": "net.minecraftforge.event.entity.player.AnvilRepairEvent"
+ },
+ "net.minecraftforge.event.entity.player.ArrowLooseEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "ArrowLooseEvent",
+  "full_name": "net.minecraftforge.event.entity.player.ArrowLooseEvent"
+ },
+ "net.minecraftforge.event.entity.player.ArrowNockEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "ArrowNockEvent",
+  "full_name": "net.minecraftforge.event.entity.player.ArrowNockEvent"
+ },
+ "net.minecraftforge.event.entity.player.AttackEntityEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "AttackEntityEvent",
+  "full_name": "net.minecraftforge.event.entity.player.AttackEntityEvent"
+ },
+ "net.minecraftforge.event.entity.player.BonemealEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "BonemealEvent",
+  "full_name": "net.minecraftforge.event.entity.player.BonemealEvent"
+ },
+ "net.minecraftforge.event.entity.player.CriticalHitEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "CriticalHitEvent",
+  "full_name": "net.minecraftforge.event.entity.player.CriticalHitEvent"
+ },
+ "net.minecraftforge.event.entity.player.EntityItemPickupEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "EntityItemPickupEvent",
+  "full_name": "net.minecraftforge.event.entity.player.EntityItemPickupEvent"
+ },
+ "net.minecraftforge.event.entity.player.FillBucketEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "FillBucketEvent",
+  "full_name": "net.minecraftforge.event.entity.player.FillBucketEvent"
+ },
+ "net.minecraftforge.event.entity.player.ItemFishedEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "ItemFishedEvent",
+  "full_name": "net.minecraftforge.event.entity.player.ItemFishedEvent"
+ },
+ "net.minecraftforge.event.entity.player.ItemTooltipEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "ItemTooltipEvent",
+  "full_name": "net.minecraftforge.event.entity.player.ItemTooltipEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerContainerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerContainerEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerContainerEvent",
+  "children": [
+   "net.minecraftforge.event.entity.player.PlayerContainerEvent.Open",
+   "net.minecraftforge.event.entity.player.PlayerContainerEvent.Close"
+  ]
+ },
+ "net.minecraftforge.event.entity.player.PlayerContainerEvent.Open": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerContainerEvent.Open",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerContainerEvent.Open"
+ },
+ "net.minecraftforge.event.entity.player.PlayerContainerEvent.Close": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerContainerEvent.Close",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerContainerEvent.Close"
+ },
+ "net.minecraftforge.event.entity.player.PlayerDestroyItemEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerDestroyItemEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerDestroyItemEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerDropsEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerDropsEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerDropsEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent",
+  "children": [
+   "net.minecraftforge.client.event.InputUpdateEvent",
+   "net.minecraftforge.client.event.PlayerSPPushOutOfBlocksEvent",
+   "net.minecraftforge.client.event.RenderPlayerEvent",
+   "net.minecraftforge.event.brewing.PlayerBrewedPotionEvent",
+   "net.minecraftforge.event.entity.player.AdvancementEvent",
+   "net.minecraftforge.event.entity.player.AnvilRepairEvent",
+   "net.minecraftforge.event.entity.player.ArrowLooseEvent",
+   "net.minecraftforge.event.entity.player.ArrowNockEvent",
+   "net.minecraftforge.event.entity.player.AttackEntityEvent",
+   "net.minecraftforge.event.entity.player.BonemealEvent",
+   "net.minecraftforge.event.entity.player.CriticalHitEvent",
+   "net.minecraftforge.event.entity.player.EntityItemPickupEvent",
+   "net.minecraftforge.event.entity.player.FillBucketEvent",
+   "net.minecraftforge.event.entity.player.ItemFishedEvent",
+   "net.minecraftforge.event.entity.player.ItemTooltipEvent",
+   "net.minecraftforge.event.entity.player.PlayerContainerEvent",
+   "net.minecraftforge.event.entity.player.PlayerDestroyItemEvent",
+   "net.minecraftforge.event.entity.player.PlayerEvent.HarvestCheck",
+   "net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed",
+   "net.minecraftforge.event.entity.player.PlayerEvent.NameFormat",
+   "net.minecraftforge.event.entity.player.PlayerEvent.Clone",
+   "net.minecraftforge.event.entity.player.PlayerEvent.StartTracking",
+   "net.minecraftforge.event.entity.player.PlayerEvent.StopTracking",
+   "net.minecraftforge.event.entity.player.PlayerEvent.LoadFromFile",
+   "net.minecraftforge.event.entity.player.PlayerEvent.SaveToFile",
+   "net.minecraftforge.event.entity.player.PlayerEvent.Visibility",
+   "net.minecraftforge.event.entity.player.PlayerFlyableFallEvent",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent",
+   "net.minecraftforge.event.entity.player.PlayerPickupXpEvent",
+   "net.minecraftforge.event.entity.player.PlayerSetSpawnEvent",
+   "net.minecraftforge.event.entity.player.PlayerSleepInBedEvent",
+   "net.minecraftforge.event.entity.player.PlayerWakeUpEvent",
+   "net.minecraftforge.event.entity.player.SleepingLocationCheckEvent",
+   "net.minecraftforge.event.entity.player.UseHoeEvent"
+  ]
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.HarvestCheck": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.HarvestCheck",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.HarvestCheck"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.BreakSpeed",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.BreakSpeed"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.NameFormat": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.NameFormat",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.NameFormat"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.Clone": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.Clone",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.Clone"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.StartTracking": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.StartTracking",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.StartTracking"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.StopTracking": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.StopTracking",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.StopTracking"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.LoadFromFile": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.LoadFromFile",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.LoadFromFile"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.SaveToFile": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.SaveToFile",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.SaveToFile"
+ },
+ "net.minecraftforge.event.entity.player.PlayerEvent.Visibility": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerEvent.Visibility",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerEvent.Visibility"
+ },
+ "net.minecraftforge.event.entity.player.PlayerFlyableFallEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerFlyableFallEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerFlyableFallEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent",
+  "children": [
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteractSpecific",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteract",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickItem",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickEmpty",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickBlock",
+   "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickEmpty"
+  ]
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteractSpecific": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.EntityInteractSpecific",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteractSpecific"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteract": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.EntityInteract",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.EntityInteract"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.RightClickBlock",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickItem": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.RightClickItem",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickItem"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickEmpty": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.RightClickEmpty",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickEmpty"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickBlock": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.LeftClickBlock",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickBlock"
+ },
+ "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickEmpty": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerInteractEvent.LeftClickEmpty",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickEmpty"
+ },
+ "net.minecraftforge.event.entity.player.PlayerPickupXpEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerPickupXpEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerPickupXpEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerSetSpawnEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerSetSpawnEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerSetSpawnEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerSleepInBedEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerSleepInBedEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerSleepInBedEvent"
+ },
+ "net.minecraftforge.event.entity.player.PlayerWakeUpEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "PlayerWakeUpEvent",
+  "full_name": "net.minecraftforge.event.entity.player.PlayerWakeUpEvent"
+ },
+ "net.minecraftforge.event.entity.player.SleepingLocationCheckEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "SleepingLocationCheckEvent",
+  "full_name": "net.minecraftforge.event.entity.player.SleepingLocationCheckEvent"
+ },
+ "net.minecraftforge.event.entity.player.UseHoeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.entity.player",
+  "simple_name": "UseHoeEvent",
+  "full_name": "net.minecraftforge.event.entity.player.UseHoeEvent"
+ },
+ "net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.furnace",
+  "simple_name": "FurnaceFuelBurnTimeEvent",
+  "full_name": "net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent"
+ },
+ "net.minecraftforge.event.terraingen.BiomeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "BiomeEvent",
+  "full_name": "net.minecraftforge.event.terraingen.BiomeEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.BiomeEvent.CreateDecorator",
+   "net.minecraftforge.event.terraingen.BiomeEvent.BiomeColor",
+   "net.minecraftforge.event.terraingen.BiomeEvent.GetVillageBlockID"
+  ]
+ },
+ "net.minecraftforge.event.terraingen.BiomeEvent.CreateDecorator": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "BiomeEvent.CreateDecorator",
+  "full_name": "net.minecraftforge.event.terraingen.BiomeEvent.CreateDecorator"
+ },
+ "net.minecraftforge.event.terraingen.BiomeEvent.BiomeColor": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "BiomeEvent.BiomeColor",
+  "full_name": "net.minecraftforge.event.terraingen.BiomeEvent.BiomeColor"
+ },
+ "net.minecraftforge.event.terraingen.BiomeEvent.GetVillageBlockID": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "BiomeEvent.GetVillageBlockID",
+  "full_name": "net.minecraftforge.event.terraingen.BiomeEvent.GetVillageBlockID"
+ },
+ "net.minecraftforge.event.terraingen.ChunkGeneratorEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "ChunkGeneratorEvent",
+  "full_name": "net.minecraftforge.event.terraingen.ChunkGeneratorEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.ChunkGeneratorEvent.ReplaceBiomeBlocks",
+   "net.minecraftforge.event.terraingen.ChunkGeneratorEvent.InitNoiseField",
+   "net.minecraftforge.event.terraingen.PopulateChunkEvent"
+  ]
+ },
+ "net.minecraftforge.event.terraingen.ChunkGeneratorEvent.ReplaceBiomeBlocks": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "ChunkGeneratorEvent.ReplaceBiomeBlocks",
+  "full_name": "net.minecraftforge.event.terraingen.ChunkGeneratorEvent.ReplaceBiomeBlocks"
+ },
+ "net.minecraftforge.event.terraingen.ChunkGeneratorEvent.InitNoiseField": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "ChunkGeneratorEvent.InitNoiseField",
+  "full_name": "net.minecraftforge.event.terraingen.ChunkGeneratorEvent.InitNoiseField"
+ },
+ "net.minecraftforge.event.terraingen.DecorateBiomeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "DecorateBiomeEvent",
+  "full_name": "net.minecraftforge.event.terraingen.DecorateBiomeEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Pre",
+   "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Post",
+   "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate"
+  ]
+ },
+ "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Pre": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "DecorateBiomeEvent.Pre",
+  "full_name": "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Pre"
+ },
+ "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Post": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "DecorateBiomeEvent.Post",
+  "full_name": "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Post"
+ },
+ "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "DecorateBiomeEvent.Decorate",
+  "full_name": "net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate"
+ },
+ "net.minecraftforge.event.terraingen.InitMapGenEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "InitMapGenEvent",
+  "full_name": "net.minecraftforge.event.terraingen.InitMapGenEvent"
+ },
+ "net.minecraftforge.event.terraingen.OreGenEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "OreGenEvent",
+  "full_name": "net.minecraftforge.event.terraingen.OreGenEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.OreGenEvent.Pre",
+   "net.minecraftforge.event.terraingen.OreGenEvent.Post",
+   "net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable"
+  ]
+ },
+ "net.minecraftforge.event.terraingen.OreGenEvent.Pre": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "OreGenEvent.Pre",
+  "full_name": "net.minecraftforge.event.terraingen.OreGenEvent.Pre"
+ },
+ "net.minecraftforge.event.terraingen.OreGenEvent.Post": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "OreGenEvent.Post",
+  "full_name": "net.minecraftforge.event.terraingen.OreGenEvent.Post"
+ },
+ "net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "OreGenEvent.GenerateMinable",
+  "full_name": "net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable"
+ },
+ "net.minecraftforge.event.terraingen.PopulateChunkEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "PopulateChunkEvent",
+  "full_name": "net.minecraftforge.event.terraingen.PopulateChunkEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.PopulateChunkEvent.Pre",
+   "net.minecraftforge.event.terraingen.PopulateChunkEvent.Post",
+   "net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate"
+  ]
+ },
+ "net.minecraftforge.event.terraingen.PopulateChunkEvent.Pre": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "PopulateChunkEvent.Pre",
+  "full_name": "net.minecraftforge.event.terraingen.PopulateChunkEvent.Pre"
+ },
+ "net.minecraftforge.event.terraingen.PopulateChunkEvent.Post": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "PopulateChunkEvent.Post",
+  "full_name": "net.minecraftforge.event.terraingen.PopulateChunkEvent.Post"
+ },
+ "net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "PopulateChunkEvent.Populate",
+  "full_name": "net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate"
+ },
+ "net.minecraftforge.event.terraingen.SaplingGrowTreeEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "SaplingGrowTreeEvent",
+  "full_name": "net.minecraftforge.event.terraingen.SaplingGrowTreeEvent"
+ },
+ "net.minecraftforge.event.terraingen.WorldTypeEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "WorldTypeEvent",
+  "full_name": "net.minecraftforge.event.terraingen.WorldTypeEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize",
+   "net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens"
+  ]
+ },
+ "net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "WorldTypeEvent.BiomeSize",
+  "full_name": "net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize"
+ },
+ "net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.terraingen",
+  "simple_name": "WorldTypeEvent.InitBiomeGens",
+  "full_name": "net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens"
+ },
+ "net.minecraftforge.event.world.BlockEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent",
+  "children": [
+   "net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent",
+   "net.minecraftforge.event.world.BlockEvent.BreakEvent",
+   "net.minecraftforge.event.world.BlockEvent.PlaceEvent",
+   "net.minecraftforge.event.world.BlockEvent.NeighborNotifyEvent",
+   "net.minecraftforge.event.world.BlockEvent.CreateFluidSourceEvent",
+   "net.minecraftforge.event.world.BlockEvent.CropGrowEvent",
+   "net.minecraftforge.event.world.BlockEvent.PortalSpawnEvent",
+   "net.minecraftforge.event.world.NoteBlockEvent"
+  ]
+ },
+ "net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.HarvestDropsEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent"
+ },
+ "net.minecraftforge.event.world.BlockEvent.BreakEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.BreakEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.BreakEvent"
+ },
+ "net.minecraftforge.event.world.BlockEvent.PlaceEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.PlaceEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.PlaceEvent"
+ },
+ "net.minecraftforge.event.world.BlockEvent.NeighborNotifyEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.NeighborNotifyEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.NeighborNotifyEvent"
+ },
+ "net.minecraftforge.event.world.BlockEvent.CreateFluidSourceEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.CreateFluidSourceEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.CreateFluidSourceEvent"
+ },
+ "net.minecraftforge.event.world.BlockEvent.CropGrowEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.CropGrowEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.CropGrowEvent"
+ },
+ "net.minecraftforge.event.world.BlockEvent.PortalSpawnEvent": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "BlockEvent.PortalSpawnEvent",
+  "full_name": "net.minecraftforge.event.world.BlockEvent.PortalSpawnEvent"
+ },
+ "net.minecraftforge.event.world.ChunkDataEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkDataEvent",
+  "full_name": "net.minecraftforge.event.world.ChunkDataEvent",
+  "children": [
+   "net.minecraftforge.event.world.ChunkDataEvent.Load",
+   "net.minecraftforge.event.world.ChunkDataEvent.Save"
+  ]
+ },
+ "net.minecraftforge.event.world.ChunkDataEvent.Load": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkDataEvent.Load",
+  "full_name": "net.minecraftforge.event.world.ChunkDataEvent.Load"
+ },
+ "net.minecraftforge.event.world.ChunkDataEvent.Save": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkDataEvent.Save",
+  "full_name": "net.minecraftforge.event.world.ChunkDataEvent.Save"
+ },
+ "net.minecraftforge.event.world.ChunkEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkEvent",
+  "full_name": "net.minecraftforge.event.world.ChunkEvent",
+  "children": [
+   "net.minecraftforge.event.world.ChunkDataEvent",
+   "net.minecraftforge.event.world.ChunkEvent.Load",
+   "net.minecraftforge.event.world.ChunkEvent.Unload"
+  ]
+ },
+ "net.minecraftforge.event.world.ChunkEvent.Load": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkEvent.Load",
+  "full_name": "net.minecraftforge.event.world.ChunkEvent.Load"
+ },
+ "net.minecraftforge.event.world.ChunkEvent.Unload": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkEvent.Unload",
+  "full_name": "net.minecraftforge.event.world.ChunkEvent.Unload"
+ },
+ "net.minecraftforge.event.world.ChunkWatchEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkWatchEvent",
+  "full_name": "net.minecraftforge.event.world.ChunkWatchEvent",
+  "children": [
+   "net.minecraftforge.event.world.ChunkWatchEvent.Watch",
+   "net.minecraftforge.event.world.ChunkWatchEvent.UnWatch"
+  ]
+ },
+ "net.minecraftforge.event.world.ChunkWatchEvent.Watch": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkWatchEvent.Watch",
+  "full_name": "net.minecraftforge.event.world.ChunkWatchEvent.Watch"
+ },
+ "net.minecraftforge.event.world.ChunkWatchEvent.UnWatch": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ChunkWatchEvent.UnWatch",
+  "full_name": "net.minecraftforge.event.world.ChunkWatchEvent.UnWatch"
+ },
+ "net.minecraftforge.event.world.ExplosionEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ExplosionEvent",
+  "full_name": "net.minecraftforge.event.world.ExplosionEvent",
+  "children": [
+   "net.minecraftforge.event.world.ExplosionEvent.Start",
+   "net.minecraftforge.event.world.ExplosionEvent.Detonate"
+  ]
+ },
+ "net.minecraftforge.event.world.ExplosionEvent.Start": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ExplosionEvent.Start",
+  "full_name": "net.minecraftforge.event.world.ExplosionEvent.Start"
+ },
+ "net.minecraftforge.event.world.ExplosionEvent.Detonate": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "ExplosionEvent.Detonate",
+  "full_name": "net.minecraftforge.event.world.ExplosionEvent.Detonate"
+ },
+ "net.minecraftforge.event.world.GetCollisionBoxesEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "GetCollisionBoxesEvent",
+  "full_name": "net.minecraftforge.event.world.GetCollisionBoxesEvent"
+ },
+ "net.minecraftforge.event.world.NoteBlockEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "NoteBlockEvent",
+  "full_name": "net.minecraftforge.event.world.NoteBlockEvent",
+  "children": [
+   "net.minecraftforge.event.world.NoteBlockEvent.Play",
+   "net.minecraftforge.event.world.NoteBlockEvent.Change"
+  ]
+ },
+ "net.minecraftforge.event.world.NoteBlockEvent.Play": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "NoteBlockEvent.Play",
+  "full_name": "net.minecraftforge.event.world.NoteBlockEvent.Play"
+ },
+ "net.minecraftforge.event.world.NoteBlockEvent.Change": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "NoteBlockEvent.Change",
+  "full_name": "net.minecraftforge.event.world.NoteBlockEvent.Change"
+ },
+ "net.minecraftforge.event.world.WorldEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "WorldEvent",
+  "full_name": "net.minecraftforge.event.world.WorldEvent",
+  "children": [
+   "net.minecraftforge.event.terraingen.SaplingGrowTreeEvent",
+   "net.minecraftforge.event.world.ChunkEvent",
+   "net.minecraftforge.event.world.GetCollisionBoxesEvent",
+   "net.minecraftforge.event.world.WorldEvent.Load",
+   "net.minecraftforge.event.world.WorldEvent.Unload",
+   "net.minecraftforge.event.world.WorldEvent.Save",
+   "net.minecraftforge.event.world.WorldEvent.PotentialSpawns",
+   "net.minecraftforge.event.world.WorldEvent.CreateSpawnPosition"
+  ]
+ },
+ "net.minecraftforge.event.world.WorldEvent.Load": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "WorldEvent.Load",
+  "full_name": "net.minecraftforge.event.world.WorldEvent.Load"
+ },
+ "net.minecraftforge.event.world.WorldEvent.Unload": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "WorldEvent.Unload",
+  "full_name": "net.minecraftforge.event.world.WorldEvent.Unload"
+ },
+ "net.minecraftforge.event.world.WorldEvent.Save": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "WorldEvent.Save",
+  "full_name": "net.minecraftforge.event.world.WorldEvent.Save"
+ },
+ "net.minecraftforge.event.world.WorldEvent.PotentialSpawns": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "WorldEvent.PotentialSpawns",
+  "full_name": "net.minecraftforge.event.world.WorldEvent.PotentialSpawns"
+ },
+ "net.minecraftforge.event.world.WorldEvent.CreateSpawnPosition": {
+  "cancelable": true,
+  "has_result": false,
+  "package": "net.minecraftforge.event.world",
+  "simple_name": "WorldEvent.CreateSpawnPosition",
+  "full_name": "net.minecraftforge.event.world.WorldEvent.CreateSpawnPosition"
+ },
+ "net.minecraftforge.fluids.FluidEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fluids",
+  "simple_name": "FluidEvent",
+  "full_name": "net.minecraftforge.fluids.FluidEvent",
+  "children": [
+   "net.minecraftforge.fluids.FluidEvent.FluidMotionEvent",
+   "net.minecraftforge.fluids.FluidEvent.FluidFillingEvent",
+   "net.minecraftforge.fluids.FluidEvent.FluidDrainingEvent",
+   "net.minecraftforge.fluids.FluidEvent.FluidSpilledEvent"
+  ]
+ },
+ "net.minecraftforge.fluids.FluidEvent.FluidMotionEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fluids",
+  "simple_name": "FluidEvent.FluidMotionEvent",
+  "full_name": "net.minecraftforge.fluids.FluidEvent.FluidMotionEvent"
+ },
+ "net.minecraftforge.fluids.FluidEvent.FluidFillingEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fluids",
+  "simple_name": "FluidEvent.FluidFillingEvent",
+  "full_name": "net.minecraftforge.fluids.FluidEvent.FluidFillingEvent"
+ },
+ "net.minecraftforge.fluids.FluidEvent.FluidDrainingEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fluids",
+  "simple_name": "FluidEvent.FluidDrainingEvent",
+  "full_name": "net.minecraftforge.fluids.FluidEvent.FluidDrainingEvent"
+ },
+ "net.minecraftforge.fluids.FluidEvent.FluidSpilledEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fluids",
+  "simple_name": "FluidEvent.FluidSpilledEvent",
+  "full_name": "net.minecraftforge.fluids.FluidEvent.FluidSpilledEvent"
+ },
+ "net.minecraftforge.fluids.FluidRegisterEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fluids",
+  "simple_name": "FluidRegisterEvent",
+  "full_name": "net.minecraftforge.fluids.FluidRegisterEvent"
+ },
+ "net.minecraftforge.fml.client.event.ConfigChangedEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.fml.client.event",
+  "simple_name": "ConfigChangedEvent",
+  "full_name": "net.minecraftforge.fml.client.event.ConfigChangedEvent",
+  "children": [
+   "net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent",
+   "net.minecraftforge.fml.client.event.ConfigChangedEvent.PostConfigChangedEvent"
+  ]
+ },
+ "net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.fml.client.event",
+  "simple_name": "ConfigChangedEvent.OnConfigChangedEvent",
+  "full_name": "net.minecraftforge.fml.client.event.ConfigChangedEvent.OnConfigChangedEvent"
+ },
+ "net.minecraftforge.fml.client.event.ConfigChangedEvent.PostConfigChangedEvent": {
+  "cancelable": false,
+  "has_result": true,
+  "package": "net.minecraftforge.fml.client.event",
+  "simple_name": "ConfigChangedEvent.PostConfigChangedEvent",
+  "full_name": "net.minecraftforge.fml.client.event.ConfigChangedEvent.PostConfigChangedEvent"
+ },
+ "net.minecraftforge.fml.common.eventhandler.GenericEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.eventhandler",
+  "simple_name": "GenericEvent",
+  "full_name": "net.minecraftforge.fml.common.eventhandler.GenericEvent",
+  "children": [
+   "net.minecraftforge.event.AttachCapabilitiesEvent",
+   "net.minecraftforge.event.RegistryEvent"
+  ]
+ },
+ "net.minecraftforge.fml.common.gameevent.InputEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "InputEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.InputEvent",
+  "children": [
+   "net.minecraftforge.fml.common.gameevent.InputEvent.MouseInputEvent",
+   "net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent"
+  ]
+ },
+ "net.minecraftforge.fml.common.gameevent.InputEvent.MouseInputEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "InputEvent.MouseInputEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.InputEvent.MouseInputEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "InputEvent.KeyInputEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent",
+  "children": [
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemPickupEvent",
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent",
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemSmeltedEvent",
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent",
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent",
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent",
+   "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent"
+  ]
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemPickupEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.ItemPickupEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemPickupEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.ItemCraftedEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemCraftedEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemSmeltedEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.ItemSmeltedEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemSmeltedEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.PlayerLoggedInEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.PlayerLoggedOutEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedOutEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.PlayerRespawnEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerRespawnEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "PlayerEvent.PlayerChangedDimensionEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerChangedDimensionEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.TickEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "TickEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.TickEvent",
+  "children": [
+   "net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent",
+   "net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent",
+   "net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent",
+   "net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent",
+   "net.minecraftforge.fml.common.gameevent.TickEvent.RenderTickEvent"
+  ]
+ },
+ "net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "TickEvent.ServerTickEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "TickEvent.ClientTickEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "TickEvent.WorldTickEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "TickEvent.PlayerTickEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent"
+ },
+ "net.minecraftforge.fml.common.gameevent.TickEvent.RenderTickEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.gameevent",
+  "simple_name": "TickEvent.RenderTickEvent",
+  "full_name": "net.minecraftforge.fml.common.gameevent.TickEvent.RenderTickEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent",
+  "children": [
+   "net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent",
+   "net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerConnectionFromClientEvent",
+   "net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerDisconnectionFromClientEvent",
+   "net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientDisconnectionFromServerEvent",
+   "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomPacketRegistrationEvent",
+   "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomPacketEvent"
+  ]
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.ClientConnectedToServerEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerConnectionFromClientEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.ServerConnectionFromClientEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerConnectionFromClientEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerDisconnectionFromClientEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.ServerDisconnectionFromClientEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.ServerDisconnectionFromClientEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientDisconnectionFromServerEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.ClientDisconnectionFromServerEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.ClientDisconnectionFromServerEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomPacketRegistrationEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.CustomPacketRegistrationEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomPacketRegistrationEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomPacketEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.CustomPacketEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomPacketEvent"
+ },
+ "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomNetworkEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.fml.common.network",
+  "simple_name": "FMLNetworkEvent.CustomNetworkEvent",
+  "full_name": "net.minecraftforge.fml.common.network.FMLNetworkEvent.CustomNetworkEvent"
+ },
+ "net.minecraftforge.oredict.OreRegisterEvent": {
+  "cancelable": false,
+  "has_result": false,
+  "package": "net.minecraftforge.oredict",
+  "simple_name": "OreRegisterEvent",
+  "full_name": "net.minecraftforge.oredict.OreRegisterEvent"
+ }
+}
