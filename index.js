@@ -27,23 +27,37 @@ plugin.addNavigation = (menu, callback) => {
 function renderForgeEvent(req, res) {
     let eventList = jsonfile.readFileSync(__dirname + "/forge_events.json");
     let event = [];
-    for (let keys of Object.keys(eventList)) {
-        eventList[keys].formated_name = eventList[keys].simple_name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\./g, '-').toLowerCase();
-        if (JSON.stringify(eventList[keys].sides) === JSON.stringify(["client", "server"])) {
-            eventList[keys].sides = ["common"];
+
+    // Format event name to suitable anchor name
+    for(let key of Object.keys(eventList)) {
+        eventList[key].anchor = eventList[key].simple_name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\./g, '-').toLowerCase();
+    }
+
+    for (let key of Object.keys(eventList)) {
+        if (JSON.stringify(eventList[key].sides) === JSON.stringify(["client", "server"])) {
+            eventList[key].sides = ["common"];
         }
 
-        if (typeof (eventList[keys].children) !== "undefined") {
+        if (typeof (eventList[eventList[key].inherit]) !== "undefined") {
+            eventList[key].inherit = {
+                anchor: eventList[eventList[key].inherit].anchor,
+                name: eventList[eventList[key].inherit].simple_name
+            };
+        } else {
+            delete eventList[key].inherit;
+        }
+
+        if (typeof (eventList[key].children) !== "undefined") {
             let childArray = [];
-            for (let child of eventList[keys].children) {
+            for (let child of eventList[key].children) {
                 childArray.push({
-                    full_name: child,
-                    formated_name: eventList[child].simple_name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\./g, '-').toLowerCase()
+                    name: eventList[child].simple_name,
+                    anchor: eventList[child].anchor
                 });
             }
-            eventList[keys].children = childArray;
+            eventList[key].children = childArray;
         }
-        event.push(eventList[keys]);
+        event.push(eventList[key]);
     }
     //console.log(event);
     res.render("client/plugins/forge-event", {event});

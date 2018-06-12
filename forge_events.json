@@ -8,7 +8,8 @@
     "inherit": "net.minecraftforge.fml.common.eventhandler.Event",
     "sides": [
       "client"
-    ]
+    ],
+    "description": "Cet événement est déclenché quand le client est sur le point d'envoyer une message ou une commande au serveur."
   },
   "net.minecraftforge.client.event.ClientChatReceivedEvent": {
     "cancelable": true,
