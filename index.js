@@ -25,7 +25,7 @@ plugin.addNavigation = (menu, callback) => {
 };
 
 function renderForgeEvent(req, res) {
-    let eventList = jsonfile.readFileSync("forge_events.json");
+    let eventList = jsonfile.readFileSync(__dirname + "/forge_events.json");
     let event = [];
     for (let keys of Object.keys(eventList)) {
         eventList[keys].formated_name = eventList[keys].simple_name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\./g, '-').toLowerCase();
@@ -35,16 +35,13 @@ function renderForgeEvent(req, res) {
 
         if (typeof (eventList[keys].children) !== "undefined") {
             let childArray = [];
-            console.log(eventList[keys]);
             for (let child of eventList[keys].children) {
                 childArray.push({
                     full_name: child,
                     formated_name: eventList[child].simple_name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\./g, '-').toLowerCase()
                 });
-                console.log(eventList[child]);
             }
             eventList[keys].children = childArray;
-            console.log(eventList[keys]);
         }
         event.push(eventList[keys]);
     }
