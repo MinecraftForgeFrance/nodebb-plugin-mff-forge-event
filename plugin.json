@@ -3,7 +3,10 @@
   "name": "NodeBB Plugin MFF Forge Event",
   "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-forge-event",
   "library": "./index.js",
-  "template": "./static/template",
+  "templates": "./static/templates",
+  "staticDirs": {
+    "styles": "static/styles"
+  },
   "hooks": [
     {
       "hook": "static:app.load",
@@ -13,5 +16,8 @@
       "hook": "filter:navigation.available",
       "method": "addNavigation"
     }
+  ],
+  "less": [
+    "static/styles/style.less"
   ]
 }
