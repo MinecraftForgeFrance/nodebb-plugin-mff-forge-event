@@ -33,12 +33,12 @@
         <div id="{event.formated_name}" class="panel-collapse collapse">
         <!-- ENDIF !@first -->
             <div class="panel-body">
+                <!-- IF event.description -->
                 <p>
                     <span class="event-description">Description :</span><br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    {event.description}
                 </p>
+                <!-- END -->
                 <p>
                     <span class="event-heritage">Hérite de :</span><br>
                     {event.inherit}
