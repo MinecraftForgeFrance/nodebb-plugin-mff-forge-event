@@ -19,5 +19,8 @@
   ],
   "less": [
     "static/styles/style.less"
+  ],
+  "scripts": [
+    "static/js/search.js"
   ]
 }

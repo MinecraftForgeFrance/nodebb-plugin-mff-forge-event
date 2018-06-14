@@ -6,13 +6,21 @@
             </span>
         </a>
     </li>
-    <li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"
-        class="active">
+    <li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
         <span itemprop="title">
             Événements Forge
         </span>
     </li>
 </ol>
+<form class="form-inline float-right">
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-prepend">
+            <div class="input-group-text unselectable"><i class="fa fa-search"></i></div>
+        </div>
+        <input class="form-control" id="searchInput" type="text" style="margin-right: -8px;" placeholder="Rechercher...">
+    </div>
+    <br/>
+</form>
 <div class="panel-group" id="accordion">
     <!-- BEGIN event -->
     <div class="panel panel-default">
@@ -61,4 +69,23 @@
         </div>
     </div>
     <!-- END -->
+</div>
+<div class="modal fade" id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="emptyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger" id="emptyModalLabel">Erreur</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-dark">
+                Le champs est vide.<br/>
+                Opération impossible.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
 </div>
