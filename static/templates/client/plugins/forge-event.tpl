@@ -89,3 +89,15 @@
         </div>
     </div>
 </div>
+
+<script>
+window.addEventListener("load", function () {
+            let hash = document.location.hash;
+            if (hash.length > 1) {
+                let selected = document.querySelector(hash);
+                if (selected !== null) {
+                    selected.classList.add("in")
+                }
+            }
+        });
+</script>
