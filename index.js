@@ -6,7 +6,7 @@ plugin.init = (params, callback) => {
     let middleware = params.middleware;
 
     app.get("/forgeevents", middleware.buildHeader, renderForgeEvent);
-    app.get("/api/forgeevents", renderForgeEvent);
+    app.get("/discordapi/forgeevents", getForgeEvent);
     callback();
 };
 
@@ -25,11 +25,62 @@ plugin.addNavigation = (menu, callback) => {
 };
 
 function renderForgeEvent(req, res) {
+    let events = parseForgeEventJson();
+    res.render("client/plugins/forge-event", {event: events});
+}
+
+function getForgeEvent(req, res) {
+    return searchForgeEvent(req, res, parseForgeEventJson());
+}
+
+function searchForgeEvent(req, res, events) {
+    let eventResult = {};
+    let eventName = req.query.term;
+    let side = req.query.side;
+    for (let event of events) {
+        if (typeof (eventName) !== "undefined" && typeof (side) !== "undefined") {
+            if (event.simple_name.match(eventName) && event.sides.filter(e => e === side).length !== 0) {
+                eventResult[event.simple_name] = {
+                    package: event.package,
+                    description: event.description,
+                    anchors: event.anchor
+                };
+            }
+        }
+        else if (typeof (eventName) !== "undefined") {
+            if (event.simple_name.match(eventName)) {
+                eventResult[event.simple_name] = {
+                    package: event.package,
+                    description: event.description,
+                    anchors: event.anchor
+                };
+            }
+        }
+        else if (typeof (side) !== "undefined") {
+            if (event.sides.filter(e => e === side).length !== 0) {
+                eventResult[event.simple_name] = {
+                    package: event.package,
+                    description: event.description,
+                    anchors: event.anchor
+                };
+            }
+        }
+        else {
+            return res.status(400).json({error: "Missing arguments"})
+        }
+    }
+    if (eventResult.length === 0) {
+        return res.status(200).send({message: "No result"});
+    }
+    return res.status(200).json(eventResult);
+}
+
+function parseForgeEventJson() {
     let eventList = jsonfile.readFileSync(__dirname + "/forge_events.json");
-    let event = [];
+    let events = [];
 
     // Format event name to suitable anchor name
-    for(let key of Object.keys(eventList)) {
+    for (let key of Object.keys(eventList)) {
         eventList[key].anchor = eventList[key].simple_name.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/\./g, '-').toLowerCase();
     }
 
@@ -57,10 +108,9 @@ function renderForgeEvent(req, res) {
             }
             eventList[key].children = childArray;
         }
-        event.push(eventList[key]);
+        events.push(eventList[key]);
     }
-    //console.log(event);
-    res.render("client/plugins/forge-event", {event});
+    return events;
 }
 
 module.exports = plugin;
