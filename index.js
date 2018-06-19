@@ -26,7 +26,8 @@ plugin.addNavigation = (menu, callback) => {
 
 function renderForgeEvent(req, res) {
     let events = parseForgeEventJson();
-    res.render("client/plugins/forge-event", {event: events});
+    let searchValue = req.query.search === undefined ? "" : req.query.search;
+    res.render("client/plugins/forge-event", {event: events, searchValue: searchValue});
 }
 
 function getForgeEvent(req, res) {
