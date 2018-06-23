@@ -6,6 +6,7 @@ plugin.init = (params, callback) => {
     let middleware = params.middleware;
 
     app.get("/forgeevents", middleware.buildHeader, renderForgeEvent);
+    app.get('/api/forgeevents', renderForgeEvent);
     app.get("/discordapi/forgeevents", getForgeEvent);
     callback();
 };
@@ -27,7 +28,7 @@ plugin.addNavigation = (menu, callback) => {
 function renderForgeEvent(req, res) {
     let events = parseForgeEventJson();
     let searchValue = req.query.search === undefined ? "" : req.query.search;
-    res.render("client/plugins/forge-event", {event: events, searchValue: searchValue});
+    res.render("client/plugins/forge-event", {title: "Liste des évenements Forge", event: events, searchValue: searchValue});
 }
 
 function getForgeEvent(req, res) {

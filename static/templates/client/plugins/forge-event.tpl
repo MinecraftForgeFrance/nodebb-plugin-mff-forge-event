@@ -13,11 +13,9 @@
     </li>
 </ol>
 <form class="form-inline float-right">
-    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-        <div class="input-group-prepend">
-            <div class="input-group-text unselectable"><i class="fa fa-search"></i></div>
-        </div>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0 forge-event-search">
         <input class="form-control" id="searchInput" value="{searchValue}" type="text" style="margin-right: -8px;" placeholder="Rechercher...">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
     </div>
     <br/>
 </form>
@@ -61,7 +59,7 @@
             <!-- IF event.children -->
             <div class="panel-footer">
                 <!-- BEGIN event.children -->
-                <a data-toggle="collapse" data-parent="#accordion" href="#{event.children.anchor}">{event.children.name}</a>
+                <a class="child-event" data-toggle="collapse" data-parent="#accordion" href="#{event.children.anchor}">{event.children.name}</a>
                 <!-- END -->
             </div>
             <!-- END -->
