@@ -37,9 +37,10 @@ function getForgeEvent(req, res) {
 function searchForgeEvent(req, res, events) {
     let eventResult = {};
     let eventName = req.query.term;
-    for (let event of events) {
-        if (typeof (eventName) !== "undefined") {
-            if (event.simple_name.match(eventName)) {
+    if (typeof (eventName) !== "undefined") {
+        for (let event of events) {
+            let regEventName = new RegExp(eventName, 'i');
+            if (event.simple_name.match(regEventName)) {
                 eventResult[event.simple_name] = {
                     package: event.package,
                     description: event.description,
@@ -47,13 +48,14 @@ function searchForgeEvent(req, res, events) {
                 };
             }
         }
-        else {
-            return res.status(400).json({error: "Missing arguments"})
+        if (eventResult.length === 0) {
+            return res.status(200).send({message: "No result"});
         }
     }
-    if (eventResult.length === 0) {
-        return res.status(200).send({message: "No result"});
+    else {
+        return res.status(400).json({error: "Missing arguments"})
     }
+
     return res.status(200).json(eventResult);
 }
 
