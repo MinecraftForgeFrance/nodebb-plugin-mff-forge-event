@@ -37,28 +37,9 @@ function getForgeEvent(req, res) {
 function searchForgeEvent(req, res, events) {
     let eventResult = {};
     let eventName = req.query.term;
-    let side = req.query.side;
     for (let event of events) {
-        if (typeof (eventName) !== "undefined" && typeof (side) !== "undefined") {
-            if (event.simple_name.match(eventName) && event.sides.filter(e => e === side).length !== 0) {
-                eventResult[event.simple_name] = {
-                    package: event.package,
-                    description: event.description,
-                    anchors: event.anchor
-                };
-            }
-        }
-        else if (typeof (eventName) !== "undefined") {
+        if (typeof (eventName) !== "undefined") {
             if (event.simple_name.match(eventName)) {
-                eventResult[event.simple_name] = {
-                    package: event.package,
-                    description: event.description,
-                    anchors: event.anchor
-                };
-            }
-        }
-        else if (typeof (side) !== "undefined") {
-            if (event.sides.filter(e => e === side).length !== 0) {
                 eventResult[event.simple_name] = {
                     package: event.package,
                     description: event.description,
@@ -86,10 +67,10 @@ function parseForgeEventJson() {
     }
 
     for (let key of Object.keys(eventList)) {
-        if (JSON.stringify(eventList[key].sides) === JSON.stringify(["client", "server"])) {
-            eventList[key].sides = ["common"];
-        }
+        // Is the event annotated ?
+        eventList[key].annotated = eventList[key].has_result || eventList[key].cancelable;
 
+        // Search parent class in the json file
         if (typeof (eventList[eventList[key].inherit]) !== "undefined") {
             eventList[key].inherit = {
                 anchor: eventList[eventList[key].inherit].anchor,
@@ -99,6 +80,7 @@ function parseForgeEventJson() {
             delete eventList[key].inherit;
         }
 
+        // Search child classes in the json file
         if (typeof (eventList[key].children) !== "undefined") {
             let childArray = [];
             for (let child of eventList[key].children) {
