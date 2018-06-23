@@ -30,20 +30,19 @@
                     {event.simple_name} <small class="event-package">{event.package}</small>
                 </a>
             </h3>
-            <div class="text-info">{event.sides}</div>
+            <!-- IF event.annotated -->
+                <div class="text-right">
+                    <!-- IF event.has_result -->
+                            <div class="event-annotation">@HasResult</div>
+                    <!-- END -->
+                    <!-- IF event.cancelable -->
+                            <div class="event-annotation">@Cancelable</div>
+                    <!-- END -->
+                </div>
+            <!-- END -->
         </div>
         <div id="{event.anchor}" class="panel-collapse collapse">
             <div class="panel-body">
-                <!-- IF event.has_result -->
-                    <p>
-                        <span class="event-annotation">Annotée : </span><span class="text-info">@HasResult</span>
-                    </p>
-                <!-- END -->
-                <!-- IF event.cancelable -->
-                    <p>
-                        <span class="event-annotation">Annotée : </span><span class="text-info">@Cancelable</span>
-                    </p>
-                <!-- END -->
                 <!-- IF event.inherit -->
                     <p>
                         <span class="event-inheritance">Extends : </span>
