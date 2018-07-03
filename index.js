@@ -49,7 +49,7 @@ function searchForgeEvent(req, res, events) {
                 };
             }
         }
-        if (eventResult.length === 0) {
+        if (Object.getOwnPropertyNames(eventResult).length === 0) {
             return res.status(200).send({message: "No result"});
         }
     }
