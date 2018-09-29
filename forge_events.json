@@ -1553,7 +1553,7 @@
     "inherit": "net.minecraftforge.event.entity.player.PlayerEvent",
     "cancelable": true,
     "has_result": false,
-    "description": "Cet event est déclenché quand un joeuur attacue une entité."
+    "description": "Cet event est déclenché quand un joueur attaque une entité."
   },
   "net.minecraftforge.event.entity.player.BonemealEvent": {
     "package": "net.minecraftforge.event.entity.player",
