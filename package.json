@@ -23,9 +23,8 @@
     "compatibility": "^2.0.0"
   },
   "dependencies": {
-    "jsonfile": "^4.0.0"
+    "jsonfile": "^6.1.0"
   },
-  "devDependencies": {},
   "bugs": {
     "url": "https://github.com/MinecraftForgeFrance/nodebb-plugin-mff-forge-event/issues"
   },
