@@ -1,44 +1,48 @@
-const jsonfile = require("jsonfile");
-const plugin = {};
+const jsonfile = require('jsonfile');
 
-plugin.init = (params, callback) => {
-    let app = params.router;
-    let middleware = params.middleware;
+const routeHelpers = require.main.require('./src/routes/helpers');
 
-    app.get("/forgeevents", middleware.buildHeader, renderForgeEvent);
-    app.get('/api/forgeevents', renderForgeEvent);
-    app.get("/discordapi/forgeevents", getForgeEvent);
-    callback();
-};
+const MFFForgeEventPlugin = {
+    parsedEvents: undefined,
+    // Init the plugin
+    async init(params) {
+        const { router } = params;
 
-plugin.addNavigation = (menu, callback) => {
-    menu = menu.concat([
-        {
-            route: "/forgeevents",
+        router.get('/forgeevents', (req, res) => res.status(301).redirect('/forge-events'));
+        routeHelpers.setupPageRoute(router, '/forge-events', renderForgeEvent);
+        router.get('/discordapi/forgeevents', getForgeEvent);
+
+        MFFForgeEventPlugin.parsedEvents = parseForgeEventJson();
+    },
+    async addNavigation(menu) {
+        menu.push({
+            route: '/forge-events',
             title: "Forge Events",
             iconClass: "fa-code-fork",
             textClass: "visible-xs-inline",
             text: "Forge Events"
-        }
-    ]);
-
-    callback(null, menu);
+        });
+        return menu;
+    }
 };
 
 function renderForgeEvent(req, res) {
-    let events = parseForgeEventJson();
     let searchValue = req.query.search === undefined ? "" : req.query.search;
-    res.render("client/plugins/forge-event", {title: "Liste des évenements Forge", event: events, searchValue: searchValue});
+    res.render('forge-events', {
+        title: 'Liste des évenements Forge',
+        event: MFFForgeEventPlugin.parsedEvents,
+        searchValue: searchValue
+    });
 }
 
 function getForgeEvent(req, res) {
-    return searchForgeEvent(req, res, parseForgeEventJson());
+    return searchForgeEvent(req, res, MFFForgeEventPlugin.parsedEvents);
 }
 
 function searchForgeEvent(req, res, events) {
     let eventResult = {};
     let eventName = req.query.term;
-    if (typeof (eventName) !== "undefined") {
+    if (typeof (eventName) !== 'undefined') {
         for (let event of events) {
             let regEventName = new RegExp(eventName, 'i');
             if (event.simple_name.match(regEventName)) {
@@ -50,18 +54,18 @@ function searchForgeEvent(req, res, events) {
             }
         }
         if (Object.getOwnPropertyNames(eventResult).length === 0) {
-            return res.status(200).send({message: "No result"});
+            return res.status(200).send({ message: 'No result' });
         }
     }
     else {
-        return res.status(400).json({error: "Missing arguments"})
+        return res.status(400).json({ error: 'Missing arguments' })
     }
 
     return res.status(200).json(eventResult);
 }
 
 function parseForgeEventJson() {
-    let eventList = jsonfile.readFileSync(__dirname + "/forge_events.json");
+    let eventList = jsonfile.readFileSync(__dirname + '/forge_events.json');
     let events = [];
 
     // Format event name to suitable anchor name
@@ -99,4 +103,4 @@ function parseForgeEventJson() {
     return events;
 }
 
-module.exports = plugin;
+module.exports = MFFForgeEventPlugin;
