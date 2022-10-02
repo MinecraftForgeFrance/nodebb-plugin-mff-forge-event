@@ -1,5 +1,6 @@
 const jsonfile = require('jsonfile');
 
+const helpers = require.main.require('./src/controllers/helpers');
 const routeHelpers = require.main.require('./src/routes/helpers');
 
 const MFFForgeEventPlugin = {
@@ -17,7 +18,7 @@ const MFFForgeEventPlugin = {
     async addNavigation(menu) {
         menu.push({
             route: '/forge-events',
-            title: "Forge Events",
+            title: "[[mff-forge-event:menu.title]]",
             iconClass: "fa-code-fork",
             textClass: "visible-xs-inline",
             text: "Forge Events"
@@ -29,8 +30,9 @@ const MFFForgeEventPlugin = {
 function renderForgeEvent(req, res) {
     let searchValue = req.query.search === undefined ? "" : req.query.search;
     res.render('forge-events', {
-        title: 'Liste des évenements Forge',
+        title: '[[mff-forge-event:page.title]]',
         event: MFFForgeEventPlugin.parsedEvents,
+        breadcrumbs: helpers.buildBreadcrumbs([{ text: '[[mff-forge-event:menu.title]]' }]),
         searchValue: searchValue
     });
 }
