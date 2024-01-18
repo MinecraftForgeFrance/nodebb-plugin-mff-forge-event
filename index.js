@@ -19,7 +19,7 @@ const MFFForgeEventPlugin = {
         menu.push({
             route: '/forge-events',
             title: "[[mff-forge-event:menu.title]]",
-            iconClass: "fa-code-fork",
+            iconClass: "fa-burst",
             textClass: "visible-xs-inline",
             text: "Forge Events"
         });

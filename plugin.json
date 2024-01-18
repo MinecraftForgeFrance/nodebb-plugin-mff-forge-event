@@ -20,8 +20,8 @@
       "method": "addNavigation"
     }
   ],
-  "less": [
-    "static/styles/style.less"
+  "scss": [
+    "static/styles/style.scss"
   ],
   "languages": "languages",
   "defaultLang": "en_GB"

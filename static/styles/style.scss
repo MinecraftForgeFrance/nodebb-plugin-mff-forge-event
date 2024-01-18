@@ -1,0 +1,32 @@
+.event-package {
+  margin: 0 0.25rem -0.125rem 0.25rem
+}
+
+.event-description, .event-inheritance, .event-annotations {
+  font-weight: bold;
+}
+
+.event-annotations {
+  display: inline-flex;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 1rem 0 0;
+  justify-content: flex-end;
+  li {
+    background-color: green;
+    color: white;
+    border-radius: 0.125rem;
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+}
+
+a.child-event:not(:last-child) {
+  border-right: 1px solid #babdc1;
+  padding-right: 5px;
+}
+
+.forge-event-search {
+  margin-bottom: 5px;
+}
