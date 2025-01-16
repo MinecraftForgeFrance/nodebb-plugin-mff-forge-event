@@ -60,10 +60,10 @@ function searchForgeEvent(req, res, events) {
         }
     }
     else {
-        return res.status(400).json({ error: 'Missing arguments' })
+        return res.status(400).json({ message: 'Missing arguments' })
     }
 
-    return res.status(200).json(eventResult);
+    return res.status(200).json({ data: eventResult });
 }
 
 function parseForgeEventJson() {
