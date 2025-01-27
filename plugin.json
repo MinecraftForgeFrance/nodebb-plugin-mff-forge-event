@@ -6,7 +6,7 @@
   "templates": "./static/templates",
   "modules": {
     "../client/forge-events.js": "static/js/forge-events.js"
-	},
+  },
   "staticDirs": {
     "styles": "static/styles"
   },

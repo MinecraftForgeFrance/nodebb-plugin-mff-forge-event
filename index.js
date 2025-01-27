@@ -56,11 +56,11 @@ function searchForgeEvent(req, res, events) {
             }
         }
         if (Object.getOwnPropertyNames(eventResult).length === 0) {
-            return res.status(200).send({ message: 'No result' });
+            return res.status(200).send({ data: eventResult });
         }
     }
     else {
-        return res.status(400).json({ message: 'Missing arguments' })
+        return res.status(400).json({ message: 'Missing arguments' });
     }
 
     return res.status(200).json({ data: eventResult });

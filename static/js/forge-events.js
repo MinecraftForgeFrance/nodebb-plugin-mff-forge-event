@@ -36,4 +36,4 @@ function filterEvents(value) {
     document.querySelectorAll('#forgeEventList > .accordion-item').forEach(function (element) {
         element.style.display = element.firstElementChild.id .toLowerCase().indexOf(value) !== -1 ? 'block' : 'none';
     });
-};
+}
